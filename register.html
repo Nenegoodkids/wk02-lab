@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Blog</title>
+  </head>
+  <body>
+    <form action="/register" method="POST">
+      <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        <label for="fname">ชื่อจริง:</label>
+        <input type="text" id="fname" name="firstname" required />
+        <label for="sname">นามสกุล</label>
+        <input type="text" name="surname" id="sname" required /><br />
+
+        <label for="email">อีเมล</label>
+        <input type="email" name="email" id="email" required />
+        <label for="dbirth">วันเกิด</label>
+        <input type="date" name="dbirth" id="dbirth" />
+        <fieldset>
+          <legend>เพศ</legend>
+          <label for="male">ชาย</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">หญิง</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="others">อื่นๆ</label>
+          <input type="radio" name="gender" id="others" />
+        </fieldset>
+        <label for="country">ประเทศ</label>
+        <select name="country" id="country">
+          <option value="">--ประเทศ--</option>
+          <option value="thai">ไทย</option>
+          <option value="china">จีน</option>
+          <option value="japan">ญี่ปุ่น</option>
+        </select></br>
+        <label for="moreinfo">ข้อมูลเพิ่มเติม:</label></br>
+        <textarea name="moreinfo" id="moreinfo"></textarea></br>
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
+      </fieldset>
+      <button type="submit">ส่งข้อมูล</button>
+      <button type="reset">ยกเลิก</button>
+    </form>
+  </body>
+</html>
